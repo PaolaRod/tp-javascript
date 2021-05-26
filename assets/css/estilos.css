@@ -11,23 +11,29 @@
 7. Pricing
 8. Contact
 --------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
 
-html {font-family: 'Open Sans', sans-serif;}
+body {font-family: 'Quicksand', sans-serif !important;}
+/*html {font-family: 'Quicksand', sans-serif;}*/
 /* Typography */
 p, a {font-weight: 400;}
+/*.h1 {font-size: 3.5rem; !important;}*/
 .h2 {font-size: 40px;}
 .h3 {font-size: 28px;}
 .light-300 {
-  font-family: 'Open Sans', sans-serif !important;
-  font-weight: 300;
+  font-family: 'Quicksand', sans-serif !important;
+  font-weight: 400;
 }
 .regular-400 {
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Quicksand', sans-serif !important;
   font-weight: 400;
 }
 .semi-bold-600 {
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Quicksand', sans-serif !important;
   font-weight: 600;
+}
+.display-3 {
+  font-size: 3.5rem;
 }
 .typo-space-line::after,
 .typo-space-line-center::after {
@@ -44,6 +50,7 @@ p, a {font-weight: 400;}
 }
 /* Main Nav */
 #main_nav .nav-item .nav-link:hover {color: #fff;}
+
 /* Home */
 #index_banner {
   background-image: url('.././img/portada2.jpg');
@@ -101,9 +108,13 @@ p, a {font-weight: 400;}
 .recent-work.card{
   border-radius: 10px !important;
 }
+.recent-work img {
+  height: 300px !important;
+  object-fit: cover;
+}
 .recent-work .recent-work-vertical {
-	background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 33.333%, rgba(97,84,199,1) 66.666%, rgba(255,255,255,0) 99.999%);
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 33.333%, rgb(239,193,105) 66.666%, rgba(255,255,255,0) 99.999%);
   background-size: 300% 300%;
   background-position: 0% 100%;
   transition: .5s;
@@ -123,8 +134,9 @@ p, a {font-weight: 400;}
   transition: .5s;
 }
 /* About */
+
 #work_banner {
-  background-image: url('./../img/banner-bg-02.jpg');
+  background-image: url('.././img/banner-bg-02.jpg');
   background-position: center center; background-size: cover;
   height: 100%;
   width: 100%;
@@ -145,13 +157,21 @@ p, a {font-weight: 400;}
   background-color: #b1b3f5;
 }
 .why-us {
-  background: rgb(239,239,253);
-  background: -moz-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
-  background: -webkit-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
-  background: linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  /*background: rgb(239, 239, 253);*/
+  /*background: -moz-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);*/
+  /*background: -webkit-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);*/
+  /*background: linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);*/
+  background: linear-gradient(to bottom, rgba(166,123,149,0.5), rgba(255,255,255,1));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#efeffd",endColorstr="#ffffff",GradientType=1);
 }
+.team-member img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
 .team-member-img {
+  /*height: 50%;*/
   transition-duration: 0.15s;
 }
 .team-member:hover .team-member-img {
@@ -202,6 +222,10 @@ footer a.text-light:hover {
 
 .bg-violet {
   background-color: #A67B95
+}
+
+.bg-yellow {
+  background-color: #EFC169;
 }
 
 .card-img img {
