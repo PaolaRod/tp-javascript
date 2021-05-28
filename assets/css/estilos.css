@@ -181,13 +181,13 @@ p, a {font-weight: 400;}
 
 /* Work */
 /* Singel Work */
-#work_single_banner {
-  background-image: url('./../img/banner-bg-02.jpg');
-  background-position: center center;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-}
+/*#work_single_banner {*/
+/*  background-image: url('./../img/banner-bg-02.jpg');*/
+/*  background-position: center center;*/
+/*  background-size: cover;*/
+/*  height: 100%;*/
+/*  width: 100%;*/
+/*}*/
 .related-content {
   border-radius: 20px;
   cursor: pointer;
@@ -201,8 +201,8 @@ p, a {font-weight: 400;}
   margin: auto;
   background-position: center center;
   background-size: cover;
-  height: 100%;
-  width: 100%;
+  /*height: 100%;*/
+  /*width: 100%;*/
   /*filter: brightness(110%);*/
 }
 .pricing-table,
